@@ -11,16 +11,12 @@ R
 "ProjectSettings/NavMeshAreas.asset,e\1\e1e73dbaf0c5aeb2708d980653afae43680f5a2f
 W
 'ProjectSettings/Physics2DSettings.asset,e\d\ed18f20dbc51e47c3057c29420904eeadf3949ae
-Y
-)ProjectSettings/EditorBuildSettings.asset,f\9\f968d6b48da1ab8199dcd0d76fda71b42abb7187
 Q
 !ProjectSettings/TimeManager.asset,1\1\11afb3ab0860f968baf7e3d2e8a0a0f860005d59
 P
  ProjectSettings/TagManager.asset,b\b\bb5c31022a6bdb0c8de055d7b2657e774af959a3
 V
 &ProjectSettings/GraphicsSettings.asset,2\3\23e22e130dd7f3cb222b563b163ebf01366e4b42
-T
-$ProjectSettings/EditorSettings.asset,d\1\d10385c8ac750452c4a2896f8e5d43ba1e36462c
 \
 ,ProjectSettings/PackageManagerSettings.asset,d\9\d99f9d0a5fdbfb6c159aac394d97e39e4bdf2aa5
 Z
@@ -41,10 +37,6 @@ S
 #ProjectSettings/PresetManager.asset,6\7\6750642f9da3ba501fc9cb2175648f2b7ed81c19
 B
 Assets/Scenes.meta,8\a\8a209c573807b9ac41c7571598168c03509e41a9
-O
-Assets/Scenes/SampleScene.unity,9\7\97a35fd8c69df15f6184f122d30cef70fc0abe05
-T
-$Assets/Scenes/SampleScene.unity.meta,7\b\7b7c8bb35c948c7cf766ae5419e5f88dc81a00d2
 K
 Packages/packages-lock.json,e\e\ee5c02414182ac2ee9793586b738cae04287b8bf
 F
