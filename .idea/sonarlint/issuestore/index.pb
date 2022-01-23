@@ -1,0 +1,60 @@
+
+R
+"ProjectSettings/AudioManager.asset,0\6\0601addf5cdd80193670b5dd3ae0e9fae88bae62
+\
+,ProjectSettings/VersionControlSettings.asset,e\1\e1070488b2ff70f83c1e9d4377803fb3958c62c1
+P
+ ProjectSettings/VFXManager.asset,1\2\12b95f7502e5928a81c05f6e51a72ac9f53d8087
+R
+"ProjectSettings/ProjectVersion.txt,b\0\b0589bd2976ea622442f59ada87a8d9f9e407a9e
+R
+"ProjectSettings/NavMeshAreas.asset,e\1\e1e73dbaf0c5aeb2708d980653afae43680f5a2f
+W
+'ProjectSettings/Physics2DSettings.asset,e\d\ed18f20dbc51e47c3057c29420904eeadf3949ae
+Y
+)ProjectSettings/EditorBuildSettings.asset,f\9\f968d6b48da1ab8199dcd0d76fda71b42abb7187
+Q
+!ProjectSettings/TimeManager.asset,1\1\11afb3ab0860f968baf7e3d2e8a0a0f860005d59
+P
+ ProjectSettings/TagManager.asset,b\b\bb5c31022a6bdb0c8de055d7b2657e774af959a3
+V
+&ProjectSettings/GraphicsSettings.asset,2\3\23e22e130dd7f3cb222b563b163ebf01366e4b42
+T
+$ProjectSettings/EditorSettings.asset,d\1\d10385c8ac750452c4a2896f8e5d43ba1e36462c
+\
+,ProjectSettings/PackageManagerSettings.asset,d\9\d99f9d0a5fdbfb6c159aac394d97e39e4bdf2aa5
+Z
+*ProjectSettings/UnityConnectSettings.asset,4\a\4a13ee6fa0a1bf00099ffe8b7a9e074411e3b558
+Y
+)ProjectSettings/ClusterInputManager.asset,8\a\8a03c7dfff4f30cb6b2bfb7fa1b9cabec5508a1d
+U
+%ProjectSettings/QualitySettings.asset,c\2\c2ee178d13c12c9d073a339b85cfb315a281b83d
+P
+ ProjectSettings/XRSettings.asset,4\e\4ef2c5807e0fbe8c7022a4365f2190feaf751dc5
+U
+%ProjectSettings/ProjectSettings.asset,f\2\f2ed32d7c38fb54ca0f77eb9645108b362199c9d
+U
+%ProjectSettings/DynamicsManager.asset,e\c\ecb1fd5389ae31334a81374ac3168fb4c180143d
+R
+"ProjectSettings/InputManager.asset,8\d\8d38d3000afc420506d2e162fc6dcb3452cca146
+S
+#ProjectSettings/PresetManager.asset,6\7\6750642f9da3ba501fc9cb2175648f2b7ed81c19
+B
+Assets/Scenes.meta,8\a\8a209c573807b9ac41c7571598168c03509e41a9
+O
+Assets/Scenes/SampleScene.unity,9\7\97a35fd8c69df15f6184f122d30cef70fc0abe05
+T
+$Assets/Scenes/SampleScene.unity.meta,7\b\7b7c8bb35c948c7cf766ae5419e5f88dc81a00d2
+K
+Packages/packages-lock.json,e\e\ee5c02414182ac2ee9793586b738cae04287b8bf
+F
+Packages/manifest.json,c\c\cc2c44fef6067b608c229f816ad03fa26e70a2f4
+U
+%UserSettings/EditorUserSettings.asset,4\d\4df36f299676af9c46f5280b556c376992c5895a
+L
+UserSettings/Search.settings,5\6\5672621935a054989ae4947c7f6490de154a8c1f
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
