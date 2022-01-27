@@ -2,19 +2,19 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Common.GameEvent
+namespace Creator.Common.GameEvent
 {
     public class GameEventListenerWithDelay : GameEventListener
     {
         [SerializeField] private float delay = 1f; 
         [SerializeField] private UnityEvent delayedUnityEvent;
 
-        private void Awake() => gameEvent.Register(this);
-        private void OnDestroy() => gameEvent.Deregister(this);
+        private void Awake() => listenEvent.Register(this);
+        private void OnDestroy() => listenEvent.Deregister(this);
         
         public override void RaiseEvent()
         {
-            unityEvent.Invoke();
+            actEvent.Invoke();
             if(debuggingEnabled) Debug.Log("Unity event was triggered");
             StartCoroutine(RunDelayedEvent());
         }
@@ -22,6 +22,7 @@ namespace Common.GameEvent
         private IEnumerator RunDelayedEvent()
         {
             yield return new WaitForSeconds(delay);
+            if(debuggingEnabled) Debug.Log("Delayed unity event was triggered");
             delayedUnityEvent.Invoke();
         }
     }
