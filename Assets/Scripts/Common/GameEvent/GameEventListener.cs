@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
-namespace Common.GameEvent
+namespace Creator.Common.GameEvent
 {
     public class GameEventListener : MonoBehaviour
     {
-        [SerializeField] public GameEvent gameEvent;
-        [SerializeField] public UnityEvent unityEvent;
+        [FormerlySerializedAs("triggerEvent")] [SerializeField] public GameEvent listenEvent;
+        [FormerlySerializedAs("unityEvent")] [SerializeField] public UnityEvent actEvent;
         [SerializeField] public bool debuggingEnabled;
 
         private void Awake() => RegisterGameEvent(this);
@@ -14,23 +15,21 @@ namespace Common.GameEvent
         
         public void RegisterGameEvent(GameEventListener listener)
         {
-            if (gameEvent == null) return;
-            
+            if (listenEvent == null) return;
             if(debuggingEnabled) Debug.Log("GameEventListener was registered");
-            gameEvent.Register(listener);
+            listenEvent.Register(listener);
         }
         
         public void DeregisterGameEvent(GameEventListener listener)
         {
-            if (gameEvent == null) return;
-            
+            if (listenEvent == null) return;
             if(debuggingEnabled) Debug.Log("GameEventListener was Deregistered");
-            gameEvent.Deregister(listener);
+            listenEvent.Deregister(listener);
         }
         
         public virtual void RaiseEvent() {
             if(debuggingEnabled) Debug.Log("Unity Event was triggered");
-            unityEvent.Invoke();
+            actEvent.Invoke();
         }
     }
 }
