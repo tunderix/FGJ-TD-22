@@ -1100,8 +1100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2186d542fce47e2bce09ab5a1d60938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 667440db437a1a446bbcbb4a3f31c89f, type: 2}
-  unityEvent:
+  listenEvent: {fileID: 11400000, guid: 667440db437a1a446bbcbb4a3f31c89f, type: 2}
+  actEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 35103409}
