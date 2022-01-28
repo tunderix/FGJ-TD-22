@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Creator
+namespace Creator.ResourceManagement
 {
     public class Inventory : MonoBehaviour
     {
