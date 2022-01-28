@@ -666,7 +666,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375837586}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 19.03
@@ -1357,7 +1357,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placer: {fileID: 1750864447}
-  towerPrefab: {fileID: 1978154346}
+  projectileTowerPrefab: {fileID: 1978154346}
+  warehousePrefab: {fileID: 1276925974}
+  gatherStationPrefab: {fileID: 1557134179}
 --- !u!1 &1276925974 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1699966793703946360, guid: cbf852b5a62d16a49accace45f719c04, type: 3}

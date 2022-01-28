@@ -6,11 +6,23 @@ namespace Creator.Player
     {
         [SerializeField] private TowerPlacer placer;
 
-        [SerializeField] private GameObject towerPrefab;
+        [SerializeField] private GameObject projectileTowerPrefab;
+        [SerializeField] private GameObject warehousePrefab;
+        [SerializeField] private GameObject gatherStationPrefab;
 
-        void OnPlaceTower()
+        void OnPlaceWareHouse()
         {
-            GameObject.Instantiate(towerPrefab, placer.GetTowerPlacement(), Quaternion.identity);
+            GameObject.Instantiate(warehousePrefab, placer.GetTowerPlacement(), Quaternion.identity);
+        }
+        
+        void OnPlaceGatherStation()
+        {
+            GameObject.Instantiate(gatherStationPrefab, placer.GetTowerPlacement(), Quaternion.identity);
+        }
+        
+        void OnPlaceProjectileTower()
+        {
+            GameObject.Instantiate(projectileTowerPrefab, placer.GetTowerPlacement(), Quaternion.identity);
         }
     }
 }

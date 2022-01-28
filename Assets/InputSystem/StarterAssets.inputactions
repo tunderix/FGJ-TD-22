@@ -38,9 +38,33 @@
                     "interactions": ""
                 },
                 {
-                    "name": "PlaceTower",
+                    "name": "PlaceWareHouse",
                     "type": "Button",
-                    "id": "5a79b1b3-a205-484f-9105-8ee7951f876a",
+                    "id": "48c2396b-85a6-43cd-b3fe-fa91a4a90d22",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "PlaceGatherStation",
+                    "type": "Button",
+                    "id": "b5e1afd7-2a9c-4fb5-972b-85a04cf006fd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "PlaceProjectileTower",
+                    "type": "Button",
+                    "id": "9f3b208f-3b31-4c90-86fe-79c26ac93c99",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Whistle",
+                    "type": "Button",
+                    "id": "9e905060-d8fb-4da9-b2ae-86b2134595d7",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -225,12 +249,45 @@
                 },
                 {
                     "name": "",
-                    "id": "fc56290a-d33f-4177-b4b0-695f76d5c726",
+                    "id": "5d73cc94-63b6-455c-95df-00808c814ce4",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlaceWareHouse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4a05dd01-0cd2-4cf5-a4d1-818c29e87e67",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlaceGatherStation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bce32d3b-4485-41fd-b315-acc6a77e105b",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlaceProjectileTower",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3cdc508c-c72d-4dff-875e-95df9aa0c395",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PlaceTower",
+                    "action": "Whistle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
