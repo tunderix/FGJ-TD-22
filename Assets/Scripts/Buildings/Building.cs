@@ -10,6 +10,8 @@ namespace Creator.Buildings
     /// </summary>
     public class Building : MonoBehaviour
     {
-        [SerializeField] private BuildingData data; 
+        [SerializeField] private BuildingData data;
+
+        public BuildingType BuildingType => data.BuildingType;
     }
 }

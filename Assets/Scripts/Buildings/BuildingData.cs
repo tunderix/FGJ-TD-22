@@ -8,5 +8,7 @@ namespace Creator.Buildings
     {
         [SerializeField] private BuildingType _buildingType;
         [SerializeField] private string _buildingName;
+
+        public BuildingType BuildingType => _buildingType;
     }
 }

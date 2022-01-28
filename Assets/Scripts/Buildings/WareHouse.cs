@@ -1,6 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
-using Creator.Utilities;
+using Creator.ResourceManagement;
 using UnityEngine;
 
 namespace Creator.Buildings
@@ -16,19 +15,21 @@ namespace Creator.Buildings
         [SerializeField] private int amountToCollect; 
         public void Collect()
         {
-            D.Info("Warehouse Collecting");
-            int buildingsToCollectFrom = 0;
+            List<ResourceNode> resourceNodesToCollect = null;
             foreach (Building building in safeZone.Buildings)
             {
                 var resourceGatherer = building.gameObject.GetComponent<ResourceGatherer>();
-                if (resourceGatherer != null)
+                if (building.BuildingType == BuildingType.Gatherer && resourceGatherer != null)
                 {
-                    var successfulCollection = resourceGatherer.Collect();
-                    if (successfulCollection) buildingsToCollectFrom += 1;
+                    resourceNodesToCollect = resourceGatherer.ResourceNodesInArea;
                 }
             }
-            
-            inventory.AddResources(AmountOfResource(buildingsToCollectFrom));
+
+            if (resourceNodesToCollect == null) return; 
+            foreach (var resourceNode in resourceNodesToCollect)
+            {
+                inventory.AddResources(resourceNode.Value);
+            }
         }
 
         private int AmountOfResource(int buildingCount) => buildingCount * amountToCollect; 

@@ -1,3 +1,4 @@
+using Creator.Utilities;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
@@ -16,19 +17,19 @@ namespace Creator.Common.GameEvent
         public void RegisterGameEvent(GameEventListener listener)
         {
             if (listenEvent == null) return;
-            if(debuggingEnabled) Debug.Log("GameEventListener was registered");
+            if(debuggingEnabled) D.Info("GameEventListener was registered");
             listenEvent.Register(listener);
         }
         
         public void DeregisterGameEvent(GameEventListener listener)
         {
             if (listenEvent == null) return;
-            if(debuggingEnabled) Debug.Log("GameEventListener was Deregistered");
+            if(debuggingEnabled) D.Info("GameEventListener was Deregistered");
             listenEvent.Deregister(listener);
         }
         
         public virtual void RaiseEvent() {
-            if(debuggingEnabled) Debug.Log("Unity Event was triggered");
+            if(debuggingEnabled) D.Info("Unity Event was triggered");
             actEvent.Invoke();
         }
     }
