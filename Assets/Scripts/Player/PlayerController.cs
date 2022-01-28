@@ -1,22 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Creator.Utilities;
 
-namespace Creator
+namespace Creator.Player
 {
     public class PlayerController : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
+        [SerializeField] private TowerPlacer placer;
 
-        }
+        [SerializeField] private GameObject towerPrefab;
 
-        // Update is called once per frame
-        void Update()
+        void OnPlaceTower()
         {
-        
+            GameObject.Instantiate(towerPrefab, placer.GetTowerPlacement(), Quaternion.identity);
         }
     }
 }
