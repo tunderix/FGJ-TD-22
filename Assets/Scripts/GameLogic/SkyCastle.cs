@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using Creator.Common.GameEvent;
+using Creator.Utilities;
 using UnityEngine;
 
 namespace Creator.GameLogic
@@ -9,20 +11,27 @@ namespace Creator.GameLogic
     /// </summary>
     public class SkyCastle : MonoBehaviour
     {
-        [SerializeField] private GameEvent gameStarted; 
-        private void Awake()
-        {
-            
-        }
-
+        [SerializeField] private float gameTimerInterval; 
+        [SerializeField] private GameEvent collectResources; 
         void Start()
         {
-            gameStarted.Invoke();
+            StartCoroutine(Tick());
         }
 
-        void Update()
+        private void ResourceCollection()
         {
+            D.Info("Resource Collection");
+            collectResources.Invoke();
+        }
         
+        IEnumerator<WaitForSeconds> Tick()
+        {
+            while (true)
+            {
+                yield return new WaitForSeconds(gameTimerInterval);
+                ResourceCollection();
+            }
+
         }
     }
 }
