@@ -1615,7 +1615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3848022811558922822}
   - component: {fileID: 5739107298938039162}
-  m_Layer: 0
+  m_Layer: 24
   m_Name: mesh_PlayerCharacter_Artist01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
