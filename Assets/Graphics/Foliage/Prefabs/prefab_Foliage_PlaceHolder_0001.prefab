@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3905405116959514835}
   - component: {fileID: 1627980624687767673}
   - component: {fileID: -7715486458773847679}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: prefab_Foliage_PlaceHolder_0001
   m_TagString: Untagged
   m_Icon: {fileID: 0}

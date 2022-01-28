@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CinemachineTarget
+  - Placeable
+  - Collectable
+  - Interactable
+  - Static
   layers:
   - Default
   - TransparentFX
@@ -25,12 +30,12 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Environment
+  - Foliage
+  - Resources
+  - Enemies
+  - Player
+  - Buildings
   - 
   - 
   - 
