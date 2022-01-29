@@ -1,4 +1,5 @@
 using Creator.Buildings;
+using Creator.GameLogic;
 using Creator.ResourceManagement;
 using UnityEngine;
 
@@ -13,6 +14,7 @@ namespace Creator.Player
         [SerializeField] private BuildingData gatherStation;
 
         [SerializeField] private Inventory inventory;
+        [SerializeField] private SkyCastle skyCastle;
         void OnPlaceWareHouse()
         {
             var canBuild = warehouse.BuildingRecipe.CanBuild(inventory.Crystals, inventory.Wood);
@@ -24,7 +26,7 @@ namespace Creator.Player
                 GameObject.Instantiate(warehouse.Prefab, placer.GetTowerPlacement(), Quaternion.identity);
             }
         }
-        
+
         void OnPlaceGatherStation()
         {
             var canBuild = gatherStation.BuildingRecipe.CanBuild(inventory.Crystals, inventory.Wood);
@@ -35,6 +37,11 @@ namespace Creator.Player
             {
                 GameObject.Instantiate(gatherStation.Prefab, placer.GetTowerPlacement(), Quaternion.identity);
             }
+        }
+        
+        void OnSwitchGameState()
+        {
+            skyCastle.ToggleState();
         }
         
         void OnPlaceProjectileTower()

@@ -24,6 +24,14 @@ namespace Creator.GameLogic
             StartCoroutine(ToggleGameState());
         }
 
+        public void ToggleState()
+        {
+            gameStateIsDay = !gameStateIsDay;
+            if(gameStateIsDay) gameStateDay.Invoke();
+            else gameStateNight.Invoke();
+        }
+        
+
         private void ResourceCollection()
         {
             D.Info("Resource Collection");
@@ -45,9 +53,7 @@ namespace Creator.GameLogic
             while (true)
             {
                 yield return new WaitForSeconds(minutes * 60);
-                gameStateIsDay = !gameStateIsDay;
-                if(gameStateIsDay) gameStateDay.Invoke();
-                else gameStateNight.Invoke();
+                ToggleState();
             }
 
         }

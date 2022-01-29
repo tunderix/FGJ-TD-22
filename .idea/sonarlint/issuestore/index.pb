@@ -78,7 +78,3 @@ X
 +Assets/Scripts/ResourceManagement/Recipe.cs,9\f\9f6b5fbaae214054f3e80f856d8975e758841e3c
 l
 <Assets/Scripts/ResourceManagement/ResourceTypeRequirement.cs,d\6\d639df0b28b654e2d74df3a4a3d743d25a2e52e9
-Y
-)Assets/Scripts/Player/PlayerController.cs,c\1\c1b2abcd3d72732cf3bf687bc9080c1357596be9
-T
-$Assets/Scripts/Player/TowerPlacer.cs,7\7\77f1f95ce5100d7a6eef8534b74a72d07bf6b07e

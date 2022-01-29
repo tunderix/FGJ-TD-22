@@ -68,6 +68,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "SwitchGameState",
+                    "type": "Button",
+                    "id": "eb116320-6608-4fe5-ad58-5bb875bf76ec",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -288,6 +296,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Whistle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "879b0550-8cca-406d-a2c8-cd48f93ef9dd",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchGameState",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

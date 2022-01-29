@@ -199,6 +199,7 @@ GameObject:
   - component: {fileID: 5485206181312579372}
   - component: {fileID: 2040532509225447840}
   - component: {fileID: 2377674848216427984}
+  - component: {fileID: 837086895437345817}
   m_Layer: 24
   m_Name: prefab_Player
   m_TagString: Player
@@ -426,6 +427,24 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &837086895437345817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2377674848216427996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2078ab847af794c40b7143663de7ee82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placer: {fileID: 0}
+  projectileTower: {fileID: 11400000, guid: 9783c80a2d88ae94a9a24069f64e57e6, type: 2}
+  warehouse: {fileID: 11400000, guid: 282cc83abad689c4f9c4f6742b9c99f1, type: 2}
+  gatherStation: {fileID: 11400000, guid: c6492de2f463e534495477a4b0acaa98, type: 2}
+  inventory: {fileID: 0}
+  skyCastle: {fileID: 0}
 --- !u!1 &3248480563038562187
 GameObject:
   m_ObjectHideFlags: 0
