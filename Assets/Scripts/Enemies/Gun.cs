@@ -17,7 +17,6 @@ namespace Creator.Enemies
 
         public void LookAt(Transform t)
         {
-            Debug.DrawRay(this.transform.position, t.position, Color.red, 5.0f);
             transform.LookAt(t);
         }
     }

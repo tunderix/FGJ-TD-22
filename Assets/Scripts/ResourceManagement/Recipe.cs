@@ -16,17 +16,20 @@ namespace Creator.ResourceManagement
 
         public bool CanBuild(int crystals, int woods)
         {
-            bool canBuild = false;
+            var isEnoughCrystals = false;
+            var isEnoughWood = false;
             foreach (var buildingTypeRequirement in buildingResourceDemand)
             {
-                canBuild = false;
-                canBuild = buildingTypeRequirement.ResourceType == ResourceType.Crystal &&
-                           buildingTypeRequirement.isEnough(crystals);
-                canBuild = buildingTypeRequirement.ResourceType == ResourceType.Wood &&
-                           buildingTypeRequirement.isEnough(woods);
-                if (canBuild) return true; 
+                if (buildingTypeRequirement.ResourceType == ResourceType.Crystal)
+                {
+                    isEnoughCrystals = buildingTypeRequirement.isEnough(crystals);
+                }
+                if (buildingTypeRequirement.ResourceType == ResourceType.Wood)
+                {
+                    isEnoughWood = buildingTypeRequirement.isEnough(woods);
+                }
             }
-            return canBuild;
+            return isEnoughCrystals && isEnoughWood;
         }
     }
 }
