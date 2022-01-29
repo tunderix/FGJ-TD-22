@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Creator.ResourceManagement
 {
     [Serializable]
-    public class BuildingTypeRequirement
+    public class ResourceTypeRequirement
     {
         [SerializeField] private ResourceType type;
         [SerializeField] private int resourcesNeeded;
