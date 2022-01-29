@@ -16,7 +16,7 @@ namespace Creator.GameLogic
         [SerializeField] private int minutes; 
         [SerializeField] private GameEvent gameStateDay;
         [SerializeField] private GameEvent gameStateNight;
-        [SerializeField] private bool gameStateIsDay = true;
+        public bool gameStateIsDay = true;
         void Start()
         {
             gameStateDay.Invoke();
