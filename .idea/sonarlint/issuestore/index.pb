@@ -70,3 +70,25 @@ X
 (Assets/Scripts/Buildings/BuildingData.cs,3\b\3bc32f94efab5ec0ff3b6ba7d17d7387d27a86f5
 l
 <Assets/Scripts/ResourceManagement/ResourceTypeRequirement.cs,d\6\d639df0b28b654e2d74df3a4a3d743d25a2e52e9
+Y
+)ProjectSettings/EditorBuildSettings.asset,f\9\f968d6b48da1ab8199dcd0d76fda71b42abb7187
+Q
+!Assets/Scripts/Buildings/Tower.cs,1\f\1f8f8b32479c04890e3242ca35c7088d2316a571
+P
+ Assets/Scripts/Enemies/Bullet.cs,8\c\8cfb8c99daaf6ac8a1bcc8bb5828795e18024753
+W
+'Assets/Scripts/Enemies/EnemyObserver.cs,9\1\916f3ffd5a3a863069644a1a9c8bf01b6d1e06eb
+T
+$Assets/Scripts/Buildings/Building.cs,2\9\29b675f6845f496b84b8eafbcbc49b4e8c505348
+T
+$Assets/Scripts/Player/TowerPlacer.cs,7\7\77f1f95ce5100d7a6eef8534b74a72d07bf6b07e
+]
+-Assets/Scripts/ResourceManagement/Resource.cs,f\0\f03b43211ae65df8056252cfdf80dff538007c2b
+a
+1Assets/Scripts/ResourceManagement/ResourceType.cs,0\d\0dba065ef0bc65cb2e8d4a6b57fbbe87fba576f3
+X
+(Assets/Scripts/Spawning/SpawnableData.cs,e\0\e0d9d7c0c98f65f1493227efc2a8a8a3e4c66851
+a
+1Assets/Scripts/ResourceManagement/ResourceNode.cs,5\c\5c0733bc55ffa9986194472730d221f55fac58c6
+P
+ ProjectSettings/TagManager.asset,b\b\bb5c31022a6bdb0c8de055d7b2657e774af959a3

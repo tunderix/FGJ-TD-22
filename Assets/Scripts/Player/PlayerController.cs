@@ -23,7 +23,12 @@ namespace Creator.Player
             var successfullyBought = inventory.Buy(warehouse.BuildingRecipe);
             if (successfullyBought)
             {
-                GameObject.Instantiate(warehouse.Prefab, placer.GetTowerPlacement(), Quaternion.identity);
+                GameObject newGo = Instantiate(warehouse.Prefab, placer.GetTowerPlacement(), Quaternion.identity);
+                var newWarehouse = newGo.GetComponent<WareHouse>();
+                if (newWarehouse != null)
+                {
+                    skyCastle.RegisterWarehouse(newWarehouse);
+                }
             }
         }
 

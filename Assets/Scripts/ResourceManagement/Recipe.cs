@@ -16,8 +16,8 @@ namespace Creator.ResourceManagement
 
         public bool CanBuild(int crystals, int woods)
         {
-            var isEnoughCrystals = false; 
-            var isEnoughWood = false; 
+            var isEnoughCrystals = false;
+            var isEnoughWood = false;
             foreach (var buildingTypeRequirement in buildingResourceDemand)
             {
                 if (buildingTypeRequirement.ResourceType == ResourceType.Crystal)

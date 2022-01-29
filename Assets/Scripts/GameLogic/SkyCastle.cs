@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using Creator.Buildings;
 using Creator.Common.GameEvent;
+using Creator.Enemies;
+using Creator.Player;
 using Creator.Utilities;
 using UnityEngine;
 
@@ -17,6 +20,9 @@ namespace Creator.GameLogic
         [SerializeField] private GameEvent gameStateDay;
         [SerializeField] private GameEvent gameStateNight;
         public bool gameStateIsDay = true;
+        [SerializeField] private GameEvent gameOver;
+
+        [SerializeField] private List<WareHouse> warehouses;
         void Start()
         {
             gameStateDay.Invoke();
@@ -24,6 +30,30 @@ namespace Creator.GameLogic
             StartCoroutine(ToggleGameState());
         }
 
+        public void RegisterWarehouse(WareHouse warehouse)
+        {
+            warehouses.Add(warehouse);
+        }
+
+        public void OnEnemyTargetDead(EnemyAttackTarget eat)
+        {
+            if (eat.gameObject.GetComponent<PlayerController>())
+            {
+                gameOver.Invoke();
+            }
+
+            var warehouse = eat.gameObject.GetComponent<WareHouse>();
+            if (warehouse != null)
+            {
+                warehouses.Remove(warehouse); 
+            }
+
+            if (warehouses.Count <= 0)
+            {
+                gameOver.Invoke();
+            }
+        }
+        
         public void ToggleState()
         {
             gameStateIsDay = !gameStateIsDay;

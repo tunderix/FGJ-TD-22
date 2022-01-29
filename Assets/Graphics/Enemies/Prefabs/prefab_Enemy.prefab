@@ -186,7 +186,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 0
-  shootingTarget: {fileID: 0}
+  shootingTarget: {fileID: 5664657935005412698}
+  navigationTarget: {fileID: 0}
+  animator: {fileID: 4567942667105983501}
 --- !u!195 &4627985087221214775
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -362,6 +364,11 @@ GameObject:
 --- !u!4 &1308996598113711921 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4600547156852021530, guid: 5a90e6ed51be00b42ac6557cd10c4304, type: 3}
+  m_PrefabInstance: {fileID: 3310726525054758443}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4567942667105983501 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1339407045713588774, guid: 5a90e6ed51be00b42ac6557cd10c4304, type: 3}
   m_PrefabInstance: {fileID: 3310726525054758443}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9223095443394279049

@@ -15,11 +15,40 @@ namespace Creator.Enemies
         [SerializeField] private Transform shootingTarget;
         [SerializeField] private GameObject navigationTarget;
         private NavMeshAgent _navMeshAgent;
-
+        private EnemyController enemyController;
+        [SerializeField] private Animator animator;
+        [SerializeField] private float attackInterval; 
         private void Start()
         {
             _navMeshAgent = this.GetComponent<NavMeshAgent>();
             SetNavigationTarget(FindClosestWarehouse());
+            enemyController = GetComponentInParent<EnemyController>();
+        }
+
+        private void Update()
+        {
+            animator.SetFloat("Speed", _navMeshAgent.speed);
+        }
+
+        public void AttackTrigger()
+        {
+            StartCoroutine(Attack());
+            animator.SetTrigger("Attack");
+        }
+
+        
+        IEnumerator<WaitForSeconds> Attack()
+        {
+            while (true)
+            {
+                yield return new WaitForSeconds(attackInterval);
+                // TODO - Attack Again?= 
+            }
+
+        }
+        public void AttackStopped()
+        {
+            StopCoroutine(Attack());
         }
 
         private GameObject FindClosestWarehouse()
@@ -49,8 +78,14 @@ namespace Creator.Enemies
             HP--;
             if (HP <= 0)
             {
-                Destroy(this.gameObject);
+                Die();
             }
+        }
+
+        public void Die()
+        {
+            enemyController.Remove(this);
+            Destroy(this.gameObject);
         }
 
         public Vector3 TargetPosition => shootingTarget.position; 

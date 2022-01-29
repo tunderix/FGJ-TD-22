@@ -16,7 +16,6 @@ namespace Creator.UI
         
         private void Start()
         {
-            buttonLabel.SetText(building.name);
             SetButtonColor(Color.red);
         }
 
