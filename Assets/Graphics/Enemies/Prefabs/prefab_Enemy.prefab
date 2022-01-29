@@ -325,6 +325,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 23
       objectReference: {fileID: 0}
+    - target: {fileID: 8787982350697877726, guid: 5a90e6ed51be00b42ac6557cd10c4304, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a90e6ed51be00b42ac6557cd10c4304, type: 3}
 --- !u!1 &8525322721174560205 stripped
@@ -344,6 +348,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3472162702692015974}
     m_Modifications:
+    - target: {fileID: 237193245175358944, guid: 863602198071e16408f7d46d72ffef47, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 4600547156852021530, guid: 863602198071e16408f7d46d72ffef47, type: 3}
       propertyPath: m_RootOrder
       value: 1
