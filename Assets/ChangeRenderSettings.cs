@@ -8,14 +8,18 @@ namespace Creator
     {
         [SerializeField] Color _day;
         [SerializeField] Color _night;
-
         [SerializeField] Camera _camera;
 
+
+
+        [SerializeField] float _fogNightDensity;
+        [SerializeField] float _fogDayDensity;
 
 
         [SerializeField] Color _lightDay;
         [SerializeField] Color _lightNight;
         [SerializeField] Light _dirLight;
+
 
         [SerializeField] float _transitionDuration;
 
@@ -34,28 +38,46 @@ namespace Creator
         public void Day()
         {
             StartCoroutine(ColorLerpFunction(_day,_lightDay,_transitionDuration));
+            StartCoroutine(FloatLerpFunction(_fogDayDensity,_transitionDuration));
         }
         public void Night()
         {
             StartCoroutine(ColorLerpFunction(_night,_lightNight, _transitionDuration));
+            StartCoroutine(FloatLerpFunction(_fogNightDensity,_transitionDuration));
         }
 
-        IEnumerator ColorLerpFunction(Color endValue, Color targetLightColor, float duration)
+        private IEnumerator ColorLerpFunction(Color endValue, Color targetLightColor, float duration)
         {
             float time = 0;
-            Color startValue = RenderSettings.fogColor;
+            Color startColor = RenderSettings.fogColor;
             Color startLightColor = _dirLight.color;
 
             while (time < duration)
             {
-                _camera.backgroundColor = Color.Lerp(startValue, endValue, time / duration);
-                RenderSettings.fogColor = Color.Lerp(startValue, endValue, time / duration);
+                _camera.backgroundColor = Color.Lerp(startColor, endValue, time / duration);
+                RenderSettings.fogColor = Color.Lerp(startColor, endValue, time / duration);
                 _dirLight.color = Color.Lerp(startLightColor, targetLightColor, time / duration);
                 time += Time.deltaTime;
                 yield return null;
             }
             RenderSettings.fogColor = endValue;
             _camera.backgroundColor = endValue;
+        }
+
+        
+        private IEnumerator FloatLerpFunction(float endValue, float duration)
+        {
+            float time = 0;
+            float startValue = RenderSettings.fogDensity;
+
+            while (time < duration)
+            {
+                RenderSettings.fogDensity = Mathf.Lerp(startValue, endValue, time / duration);
+
+                time += Time.deltaTime;
+                yield return null;
+            }
+            RenderSettings.fogDensity = endValue;
         }
     }
 }

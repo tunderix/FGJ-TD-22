@@ -77,6 +77,8 @@ MonoBehaviour:
   _day: {r: 0.5424528, g: 1, b: 0.96189576, a: 0}
   _night: {r: 0, g: 0.18566987, b: 0.31132078, a: 0}
   _camera: {fileID: 3571046139746859271, guid: aa9f155371968b446bdcf8f6a234f682, type: 3}
+  _fogNightDensity: 0.05
+  _fogDayDensity: 0.003
   _lightDay: {r: 0.9716981, g: 0.96079206, b: 0.66460484, a: 0}
   _lightNight: {r: 0, g: 0, b: 0, a: 0}
   _dirLight: {fileID: 5247237700702414464, guid: 869d0e23b45bc9445a9bb745cb505eae, type: 3}
