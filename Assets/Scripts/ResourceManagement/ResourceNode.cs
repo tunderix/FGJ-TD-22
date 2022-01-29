@@ -6,5 +6,6 @@ namespace Creator.ResourceManagement
     {
         [SerializeField] private Resource data;
         public int Value => data.ResourceValue;
+        public ResourceType ResourceType => data.ResourceType;
     }
 }

@@ -12,15 +12,10 @@ namespace Creator.Player
         
         private void FixedUpdate()
         {
-            // layerMask = ~layerMask;
             RaycastHit hit;
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, Mathf.Infinity, layerMask, QueryTriggerInteraction.Ignore))
             {
                 Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.yellow);
-            }
-            else
-            {
-                //hit = Vector3.zero;
             }
 
             towerPlacement = hit.point; 
