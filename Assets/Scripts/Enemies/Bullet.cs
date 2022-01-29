@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,19 +7,30 @@ namespace Creator.Enemies
 {
     public class Bullet : MonoBehaviour
     {
-        public Enemy TargetEnemy;
-
-        private void Awake()
+        [SerializeField] private float speed = 3;
+        
+        private void Update()
         {
-            TargetEnemy = null; 
+            transform.Translate(Vector3.forward * Time.deltaTime * speed);
         }
 
-        void Update()
+        private void OnTriggerEnter(Collider other)
         {
-            if (TargetEnemy != null)
+            var enemy = other.GetComponent<Enemy>();
+            if (enemy != null)
             {
-                
+                enemy.TakeDamage();
+                Destroy(this.gameObject);
             }
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            var enemyObserverExit = other.gameObject.GetComponent<EnemyObserver>();
+            if (enemyObserverExit != null)
+            {
+                Destroy(this.gameObject);
+            } 
         }
     }
 }

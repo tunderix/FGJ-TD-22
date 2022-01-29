@@ -1,20 +1,24 @@
+using System;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 namespace Creator.Enemies
 {
     public class Gun : MonoBehaviour
     {
         [SerializeField] private GameObject bulletPrefab;
-        [SerializeField] private EnemyObserver enemyObserver;
+        
 
-        public void Shoot()
+        public void Shoot(Enemy at)
         {
-            var bulletObject = GameObject.Instantiate(bulletPrefab, this.transform.position, Quaternion.identity);
-            var newBullet = bulletObject.GetComponent<Bullet>();
-            if (newBullet != null)
-            {
-                newBullet.TargetEnemy = enemyObserver.RandomEnemy();
-            }
+            if (at == null) return;
+            var bulletObject = Instantiate(bulletPrefab, transform.position, transform.rotation, transform);
+        }
+
+        public void LookAt(Transform t)
+        {
+            Debug.DrawRay(this.transform.position, t.position, Color.red, 5.0f);
+            transform.LookAt(t);
         }
     }
 }
