@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _buildingType: 1
   _buildingName: "Kerr\xE4\xE4j\xE4"
+  buildingRecipe: {fileID: 11400000, guid: 03757c78cc730014cbb6e32ef9d88bc3, type: 2}
+  prefabObject: {fileID: 9181051053805282455, guid: b00ab77c320b24d45b6ae33dc9eff7f1, type: 3}

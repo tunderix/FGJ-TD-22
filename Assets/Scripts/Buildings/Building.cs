@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Creator.ResourceManagement;
 using UnityEngine;
 
 namespace Creator.Buildings
@@ -12,6 +13,9 @@ namespace Creator.Buildings
     {
         [SerializeField] private BuildingData data;
 
+        public GameObject Prefab => data.Prefab; 
         public BuildingType BuildingType => data.BuildingType;
+
+        public Recipe Recipe => data.BuildingRecipe;
     }
 }

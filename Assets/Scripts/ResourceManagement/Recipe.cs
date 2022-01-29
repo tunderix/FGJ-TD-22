@@ -9,10 +9,10 @@ namespace Creator.ResourceManagement
     public class Recipe : ScriptableObject
     {
         [SerializeField] private BuildingType buildingType;
-        [SerializeField] private List<BuildingTypeRequirement> buildingResourceDemand;
+        [SerializeField] private List<ResourceTypeRequirement> buildingResourceDemand;
 
         public BuildingType BuildingType => buildingType;
-        public List<BuildingTypeRequirement> ResourcesNeeded => buildingResourceDemand;
+        public List<ResourceTypeRequirement> ResourcesNeeded => buildingResourceDemand;
 
         public bool CanBuild(int crystals, int woods)
         {

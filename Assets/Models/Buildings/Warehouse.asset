@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _buildingType: 2
   _buildingName: Vaja
+  buildingRecipe: {fileID: 11400000, guid: fd0a8aa566676604bbe3c91f65f6785f, type: 2}
+  prefabObject: {fileID: 1699966793703946360, guid: cbf852b5a62d16a49accace45f719c04, type: 3}

@@ -13,7 +13,6 @@ namespace Creator.UI
         [SerializeField] BuildingData building;
         [SerializeField] private TextMeshProUGUI buttonLabel; 
         [SerializeField] private Button button;
-        [SerializeField] private Recipe recipe;
         
         private void Start()
         {
@@ -21,29 +20,9 @@ namespace Creator.UI
             SetButtonColor(Color.red);
         }
 
-        public void UpdateContents(int crystals,int woods)
+        public void UpdateContents(bool canBuild)
         {
-            UpdateBuildingTypeContent(BuildingType.Gatherer, crystals, woods);
-            UpdateBuildingTypeContent(BuildingType.Warehouse, crystals, woods);
-            UpdateBuildingTypeContent(BuildingType.Tower, crystals, woods);
-        }
-
-        private void UpdateBuildingTypeContent(BuildingType buildingType, int crystals, int woods)
-        {
-            if (building.BuildingType == buildingType)
-            {
-                var canBuild = recipe.CanBuild(crystals, woods);
-                SetButtonColor(canBuild ? Color.white : Color.red);
-                /*
-                foreach (var resourceNeed in recipe.ResourcesNeeded)
-                {
-                    var hasEnoughCrystals = resourceNeed.ResourceType == ResourceType.Crystal &&
-                                            resourceNeed.isEnough(crystals);
-                    var hasEnoughWood = resourceNeed.ResourceType == ResourceType.Wood &&
-                                        resourceNeed.isEnough(woods);
-                }
-                */
-            }
+            SetButtonColor(canBuild ? Color.white : Color.red);
         }
 
         private void SetButtonColor(Color color)

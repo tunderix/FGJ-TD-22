@@ -1,3 +1,5 @@
+using Creator.Buildings;
+using Creator.ResourceManagement;
 using UnityEngine;
 
 namespace Creator.Player
@@ -6,23 +8,45 @@ namespace Creator.Player
     {
         [SerializeField] private TowerPlacer placer;
 
-        [SerializeField] private GameObject projectileTowerPrefab;
-        [SerializeField] private GameObject warehousePrefab;
-        [SerializeField] private GameObject gatherStationPrefab;
+        [SerializeField] private BuildingData projectileTower;
+        [SerializeField] private BuildingData warehouse;
+        [SerializeField] private BuildingData gatherStation;
 
+        [SerializeField] private Inventory inventory;
         void OnPlaceWareHouse()
         {
-            GameObject.Instantiate(warehousePrefab, placer.GetTowerPlacement(), Quaternion.identity);
+            var canBuild = warehouse.BuildingRecipe.CanBuild(inventory.Crystals, inventory.Wood);
+            if (!canBuild) return;
+
+            var successfullyBought = inventory.Buy(warehouse.BuildingRecipe);
+            if (successfullyBought)
+            {
+                GameObject.Instantiate(warehouse.Prefab, placer.GetTowerPlacement(), Quaternion.identity);
+            }
         }
         
         void OnPlaceGatherStation()
         {
-            GameObject.Instantiate(gatherStationPrefab, placer.GetTowerPlacement(), Quaternion.identity);
+            var canBuild = gatherStation.BuildingRecipe.CanBuild(inventory.Crystals, inventory.Wood);
+            if (!canBuild) return;
+
+            var successfullyBought = inventory.Buy(gatherStation.BuildingRecipe);
+            if (successfullyBought)
+            {
+                GameObject.Instantiate(gatherStation.Prefab, placer.GetTowerPlacement(), Quaternion.identity);
+            }
         }
         
         void OnPlaceProjectileTower()
         {
-            GameObject.Instantiate(projectileTowerPrefab, placer.GetTowerPlacement(), Quaternion.identity);
+            var canBuild = projectileTower.BuildingRecipe.CanBuild(inventory.Crystals, inventory.Wood);
+            if (!canBuild) return;
+
+            var successfullyBought = inventory.Buy(projectileTower.BuildingRecipe);
+            if (successfullyBought)
+            {
+                GameObject.Instantiate(projectileTower.Prefab, placer.GetTowerPlacement(), Quaternion.identity);
+            }
         }
     }
 }
