@@ -12,10 +12,16 @@ namespace Creator.GameLogic
     public class SkyCastle : MonoBehaviour
     {
         [SerializeField] private float gameTimerInterval; 
-        [SerializeField] private GameEvent collectResources; 
+        [SerializeField] private GameEvent collectResources;
+        [SerializeField] private int minutes; 
+        [SerializeField] private GameEvent gameStateDay;
+        [SerializeField] private GameEvent gameStateNight;
+        [SerializeField] private bool gameStateIsDay = true;
         void Start()
         {
+            gameStateDay.Invoke();
             StartCoroutine(Tick());
+            StartCoroutine(ToggleGameState());
         }
 
         private void ResourceCollection()
@@ -30,6 +36,18 @@ namespace Creator.GameLogic
             {
                 yield return new WaitForSeconds(gameTimerInterval);
                 ResourceCollection();
+            }
+
+        }
+        
+        IEnumerator<WaitForSeconds> ToggleGameState()
+        {
+            while (true)
+            {
+                yield return new WaitForSeconds(minutes * 60);
+                gameStateIsDay = !gameStateIsDay;
+                if(gameStateIsDay) gameStateDay.Invoke();
+                else gameStateNight.Invoke();
             }
 
         }

@@ -54,3 +54,31 @@ T
 $Assets/Scripts/Spawning/Spawnable.cs,3\2\32db19b28b2d824ea6aacae0e96f7969c570ffa0
 m
 =Assets/Scripts/Common/GameEvent/GameEventListenerWithDelay.cs,5\3\53c0e4eb7f10ce32261214b97f17597281540d21
+\
+,Assets/Scripts/Common/GameEvent/GameEvent.cs,8\8\880c58fc2eca9f25972dc4440c24d22cf5811647
+N
+Assets/Scripts/UI/CreatorUI.cs,8\a\8a92bb4a7acbc6f30b1244575a817cd34919e344
+O
+Assets/Scripts/UI/InGameMenu.cs,5\4\54a33e60de528c2b59c6e88071e0dd11d36ca02d
+M
+Assets/Scripts/UI/MainMenu.cs,6\a\6ab04c596207c0f173210d82acaf6098b6dabd43
+d
+4Assets/Scripts/Common/GameEvent/GameEventListener.cs,8\9\89ee4c2104a38d90aa7d0e022c1d2f0d36eb4eb3
+U
+%Assets/Scripts/Spawning/ISpawnable.cs,8\2\82c00f739ea294a28a6cdb2f742772b5322916be
+Q
+!Assets/Scripts/UI/ActionButton.cs,7\f\7febce7ad2e8d9939422fc821129c48b2b3771c6
+O
+Assets/Scripts/UI/UIResource.cs,3\9\39b48d49e6366c127d4d5661545d195025df41c4
+^
+.Assets/Scripts/ResourceManagement/Inventory.cs,a\a\aaa3400b16a5629928ec3838c3eb03718eab5094
+X
+(Assets/Scripts/Buildings/BuildingData.cs,3\b\3bc32f94efab5ec0ff3b6ba7d17d7387d27a86f5
+[
++Assets/Scripts/ResourceManagement/Recipe.cs,9\f\9f6b5fbaae214054f3e80f856d8975e758841e3c
+l
+<Assets/Scripts/ResourceManagement/ResourceTypeRequirement.cs,d\6\d639df0b28b654e2d74df3a4a3d743d25a2e52e9
+Y
+)Assets/Scripts/Player/PlayerController.cs,c\1\c1b2abcd3d72732cf3bf687bc9080c1357596be9
+T
+$Assets/Scripts/Player/TowerPlacer.cs,7\7\77f1f95ce5100d7a6eef8534b74a72d07bf6b07e
