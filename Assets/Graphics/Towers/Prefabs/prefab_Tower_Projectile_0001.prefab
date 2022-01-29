@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 9783c80a2d88ae94a9a24069f64e57e6, type: 2}
-  enemyObserver: {fileID: 0}
-  gun: {fileID: 0}
+  enemyObserver: {fileID: 4117439198088061574}
+  gun: {fileID: 7646296707304649094}
   shootingInterval: 1
   enemyToShootAt: {fileID: 0}
 --- !u!1 &1471521453073712618

@@ -9,6 +9,7 @@ TagManager:
   - Collectable
   - Interactable
   - Static
+  - Warehouse
   layers:
   - Default
   - TransparentFX

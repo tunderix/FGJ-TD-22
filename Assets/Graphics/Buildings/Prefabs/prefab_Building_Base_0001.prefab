@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 520136741262170826}
   m_Layer: 0
   m_Name: prefab_Building_Base_0001
-  m_TagString: Untagged
+  m_TagString: Warehouse
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

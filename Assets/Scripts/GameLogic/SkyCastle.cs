@@ -29,6 +29,7 @@ namespace Creator.GameLogic
             gameStateIsDay = !gameStateIsDay;
             if(gameStateIsDay) gameStateDay.Invoke();
             else gameStateNight.Invoke();
+            D.Info("Changed game to ", gameStateIsDay? "day" : "night");
         }
         
 

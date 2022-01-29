@@ -13,8 +13,6 @@ W
 'ProjectSettings/Physics2DSettings.asset,e\d\ed18f20dbc51e47c3057c29420904eeadf3949ae
 Q
 !ProjectSettings/TimeManager.asset,1\1\11afb3ab0860f968baf7e3d2e8a0a0f860005d59
-P
- ProjectSettings/TagManager.asset,b\b\bb5c31022a6bdb0c8de055d7b2657e774af959a3
 V
 &ProjectSettings/GraphicsSettings.asset,2\3\23e22e130dd7f3cb222b563b163ebf01366e4b42
 \
@@ -66,8 +64,6 @@ d
 4Assets/Scripts/Common/GameEvent/GameEventListener.cs,8\9\89ee4c2104a38d90aa7d0e022c1d2f0d36eb4eb3
 U
 %Assets/Scripts/Spawning/ISpawnable.cs,8\2\82c00f739ea294a28a6cdb2f742772b5322916be
-Q
-!Assets/Scripts/UI/ActionButton.cs,7\f\7febce7ad2e8d9939422fc821129c48b2b3771c6
 O
 Assets/Scripts/UI/UIResource.cs,3\9\39b48d49e6366c127d4d5661545d195025df41c4
 ^
