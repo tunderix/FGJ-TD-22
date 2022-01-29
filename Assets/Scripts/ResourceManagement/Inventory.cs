@@ -55,9 +55,23 @@ namespace Creator.ResourceManagement
             resourceLabelCrystal.SetText(crystals.ToString());
             resourceLabelWood.SetText(wood.ToString());
             
-            projectileTowerButton.UpdateContents(towerRecipe.CanBuild(crystals, wood));
-            warehouseButton.UpdateContents(warehouseRecipe.CanBuild(crystals, wood));
-            gathererButton.UpdateContents(gathererRecipe.CanBuild(crystals, wood));
+            
+            projectileTowerButton.UpdateContents(false);
+            warehouseButton.UpdateContents(false);
+            gathererButton.UpdateContents(false);
+
+            if (towerRecipe.CanBuild(crystals, wood))
+            {
+                projectileTowerButton.UpdateContents(true);
+            }
+            if (warehouseRecipe.CanBuild(crystals, wood))
+            {
+                warehouseButton.UpdateContents(true);
+            }
+            if (gathererRecipe.CanBuild(crystals, wood))
+            {
+                gathererButton.UpdateContents(true);
+            }
         }
 
         public bool ResourceTypeEnough(ResourceTypeRequirement resourceTypeRequirement)
