@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _buildingType: 0
   _buildingName: Torni
+  buildingRecipe: {fileID: 11400000, guid: e99e9582f8758d941a51c2c647d5326b, type: 2}
+  prefabObject: {fileID: 1284015841471767304, guid: 238fbd5165e4fd44a89c596244c711f7, type: 3}

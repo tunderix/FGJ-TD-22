@@ -28,7 +28,7 @@ namespace Creator.Buildings
             if (resourceNodesToCollect == null) return; 
             foreach (var resourceNode in resourceNodesToCollect)
             {
-                inventory.AddResources(resourceNode.Value);
+                inventory.AddResources(resourceNode.ResourceType, resourceNode.Value);
             }
         }
 
