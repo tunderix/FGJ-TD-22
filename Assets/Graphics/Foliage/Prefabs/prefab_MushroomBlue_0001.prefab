@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7257607290629470322}
   - component: {fileID: 4968866473551574236}
   - component: {fileID: 3597123987591111199}
+  - component: {fileID: 6717361066254432472}
   m_Layer: 21
   m_Name: prefab_MushroomBlue_0001
   m_TagString: Untagged
@@ -97,3 +98,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -28515888060556658, guid: b961605157ddf0a46ba0192798adf7c6, type: 3}
+--- !u!205 &6717361066254432472
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3199293015102442919}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 5
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.01
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4968866473551574236}
+  m_Enabled: 1

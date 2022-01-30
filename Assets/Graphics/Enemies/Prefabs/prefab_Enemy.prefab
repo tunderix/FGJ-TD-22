@@ -189,6 +189,7 @@ MonoBehaviour:
   shootingTarget: {fileID: 5664657935005412698}
   navigationTarget: {fileID: 0}
   animator: {fileID: 4567942667105983501}
+  attackInterval: 0
 --- !u!195 &4627985087221214775
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -354,6 +355,10 @@ PrefabInstance:
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 8787982350697877726, guid: 5a90e6ed51be00b42ac6557cd10c4304, type: 3}
+      propertyPath: m_LODs.Array.data[0].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 5595876497151428525}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a90e6ed51be00b42ac6557cd10c4304, type: 3}
 --- !u!1 &8525322721174560205 stripped
@@ -369,6 +374,11 @@ Transform:
 --- !u!95 &4567942667105983501 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1339407045713588774, guid: 5a90e6ed51be00b42ac6557cd10c4304, type: 3}
+  m_PrefabInstance: {fileID: 3310726525054758443}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &5595876497151428525 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6943033563129391494, guid: 5a90e6ed51be00b42ac6557cd10c4304, type: 3}
   m_PrefabInstance: {fileID: 3310726525054758443}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9223095443394279049

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4617593512592843376}
   - component: {fileID: 6942362658236280542}
   - component: {fileID: 1533267316254980125}
+  - component: {fileID: 7680794262946642816}
   m_Layer: 21
   m_Name: prefab_MushroomThin_0001
   m_TagString: Untagged
@@ -97,3 +98,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3821246108481556421, guid: b961605157ddf0a46ba0192798adf7c6, type: 3}
+--- !u!205 &7680794262946642816
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633569105062811557}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 5
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.01
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6942362658236280542}
+  m_Enabled: 1

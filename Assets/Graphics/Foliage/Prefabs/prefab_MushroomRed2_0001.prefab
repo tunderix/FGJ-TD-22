@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5445117136758913178}
   - component: {fileID: 7814878289943120976}
   - component: {fileID: 164748914444024260}
+  - component: {fileID: 8799271663001034945}
   m_Layer: 21
   m_Name: prefab_MushroomRed2_0001
   m_TagString: Untagged
@@ -97,3 +98,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5843806584615087892, guid: 9d15a33232def9a40becce716a440a84, type: 3}
+--- !u!205 &8799271663001034945
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8607779761891536261}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 5
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.01
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7814878289943120976}
+  m_Enabled: 1

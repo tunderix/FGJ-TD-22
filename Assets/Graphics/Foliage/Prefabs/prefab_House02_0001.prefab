@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6296502433717279971}
   - component: {fileID: 8587640194436124749}
   - component: {fileID: 158212919492822670}
+  - component: {fileID: 6594145668884100061}
   m_Layer: 21
   m_Name: prefab_House02_0001
   m_TagString: Untagged
@@ -97,3 +98,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3585933358869704931, guid: 5f47ab3266ba9d24bafd10dae10d0416, type: 3}
+--- !u!205 &6594145668884100061
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2287746084078430518}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 5
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.01
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 8587640194436124749}
+  m_Enabled: 1
