@@ -64,8 +64,6 @@ U
 %Assets/Scripts/Spawning/ISpawnable.cs,8\2\82c00f739ea294a28a6cdb2f742772b5322916be
 O
 Assets/Scripts/UI/UIResource.cs,3\9\39b48d49e6366c127d4d5661545d195025df41c4
-X
-(Assets/Scripts/Buildings/BuildingData.cs,3\b\3bc32f94efab5ec0ff3b6ba7d17d7387d27a86f5
 l
 <Assets/Scripts/ResourceManagement/ResourceTypeRequirement.cs,d\6\d639df0b28b654e2d74df3a4a3d743d25a2e52e9
 Y
@@ -76,8 +74,6 @@ P
  Assets/Scripts/Enemies/Bullet.cs,8\c\8cfb8c99daaf6ac8a1bcc8bb5828795e18024753
 W
 'Assets/Scripts/Enemies/EnemyObserver.cs,9\1\916f3ffd5a3a863069644a1a9c8bf01b6d1e06eb
-P
- ProjectSettings/TagManager.asset,b\b\bb5c31022a6bdb0c8de055d7b2657e774af959a3
 ^
 .Assets/Scripts/ResourceManagement/Inventory.cs,a\a\aaa3400b16a5629928ec3838c3eb03718eab5094
 M

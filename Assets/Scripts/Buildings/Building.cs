@@ -77,5 +77,10 @@ namespace Creator.Buildings
 
             renderer.materials = newMaterials.ToArray();
         }
+
+        public virtual void isCreated()
+        {
+            // Override in childs
+        }
     }
 }

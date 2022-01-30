@@ -24,22 +24,18 @@ namespace Creator.Player
             isGhostingBuilding = null;
         }
 
-        void OnPlaceWareHouse()
+        private void Building(BuildingData buildingData)
         {
             if (isGhostingBuilding == null)
             {
-                var building = PlaceGhostBuilding(warehouse);
+                var building = PlaceGhostBuilding(buildingData);
                 building.TowerPlacer = placer;
                 isGhostingBuilding = building; 
             }
-            else if (isGhostingBuilding.Recipe.BuildingType == BuildingType.Warehouse)
+            else if (isGhostingBuilding.Recipe.BuildingType == buildingData.BuildingType)
             {
-                var ware = isGhostingBuilding.GetComponent<WareHouse>();
-                if (ware != null)
-                {
-                    ware.SetInventory(inventory);
-                }
-                PlaceRealBuilding(warehouse, isGhostingBuilding);
+                isGhostingBuilding.isCreated();
+                PlaceRealBuilding(buildingData, isGhostingBuilding);
                 isGhostingBuilding = null;
                 Destroy(isGhostingBuilding.gameObject);
             }
@@ -49,19 +45,23 @@ namespace Creator.Player
             }
         }
 
+        void OnPlaceWareHouse()
+        {
+            Building(warehouse);
+        }
+
         void OnDeactivateSelection()
         {
             if(isGhostingBuilding != null)
             {
+                isGhostingBuilding = null;
                 Destroy(isGhostingBuilding.gameObject);
             }
         }
 
         void OnPlaceGatherStation()
         {
-            var building = PlaceGhostBuilding(gatherStation);
-            building.TowerPlacer = placer; 
-            PlaceRealBuilding(gatherStation, building);
+            Building(gatherStation);
         }
         
         void OnSwitchGameState()
@@ -71,9 +71,7 @@ namespace Creator.Player
         
         void OnPlaceProjectileTower()
         {
-            var building = PlaceGhostBuilding(projectileTower);
-            building.TowerPlacer = placer; 
-            PlaceRealBuilding(projectileTower, building);
+            Building(projectileTower);
         }
 
         private void PlaceRealBuilding(BuildingData buildingData, Building building)
