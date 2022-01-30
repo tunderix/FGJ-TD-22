@@ -37,7 +37,6 @@ namespace Creator.Player
                 isGhostingBuilding.isCreated();
                 PlaceRealBuilding(buildingData, isGhostingBuilding);
                 isGhostingBuilding = null;
-                Destroy(isGhostingBuilding.gameObject);
             }
             else
             {
