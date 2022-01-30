@@ -33,6 +33,11 @@ namespace Creator.Buildings
             }
         }
 
+        public void SetInventory(Inventory _inventory)
+        {
+            inventory = _inventory;
+        }
+
         private int AmountOfResource(int buildingCount) => buildingCount * amountToCollect; 
     }
 }

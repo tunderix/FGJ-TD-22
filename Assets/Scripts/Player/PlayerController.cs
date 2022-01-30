@@ -1,3 +1,4 @@
+using System;
 using Creator.Buildings;
 using Creator.GameLogic;
 using Creator.ResourceManagement;
@@ -15,33 +16,52 @@ namespace Creator.Player
 
         [SerializeField] private Inventory inventory;
         [SerializeField] private SkyCastle skyCastle;
+        
+        [SerializeField] private Building isGhostingBuilding;
+
+        private void Awake()
+        {
+            isGhostingBuilding = null;
+        }
+
         void OnPlaceWareHouse()
         {
-            var canBuild = warehouse.BuildingRecipe.CanBuild(inventory.Crystals, inventory.Wood);
-            if (!canBuild) return;
-
-            var successfullyBought = inventory.Buy(warehouse.BuildingRecipe);
-            if (successfullyBought)
+            if (isGhostingBuilding == null)
             {
-                GameObject newGo = Instantiate(warehouse.Prefab, placer.GetTowerPlacement(), Quaternion.identity);
-                var newWarehouse = newGo.GetComponent<WareHouse>();
-                if (newWarehouse != null)
+                var building = PlaceGhostBuilding(warehouse);
+                building.TowerPlacer = placer;
+                isGhostingBuilding = building; 
+            }
+            else if (isGhostingBuilding.Recipe.BuildingType == BuildingType.Warehouse)
+            {
+                var ware = isGhostingBuilding.GetComponent<WareHouse>();
+                if (ware != null)
                 {
-                    skyCastle.RegisterWarehouse(newWarehouse);
+                    ware.SetInventory(inventory);
                 }
+                PlaceRealBuilding(warehouse, isGhostingBuilding);
+                isGhostingBuilding = null;
+                Destroy(isGhostingBuilding.gameObject);
+            }
+            else
+            {
+                isGhostingBuilding = null;
+            }
+        }
+
+        void OnDeactivateSelection()
+        {
+            if(isGhostingBuilding != null)
+            {
+                Destroy(isGhostingBuilding.gameObject);
             }
         }
 
         void OnPlaceGatherStation()
         {
-            var canBuild = gatherStation.BuildingRecipe.CanBuild(inventory.Crystals, inventory.Wood);
-            if (!canBuild) return;
-
-            var successfullyBought = inventory.Buy(gatherStation.BuildingRecipe);
-            if (successfullyBought)
-            {
-                GameObject.Instantiate(gatherStation.Prefab, placer.GetTowerPlacement(), Quaternion.identity);
-            }
+            var building = PlaceGhostBuilding(gatherStation);
+            building.TowerPlacer = placer; 
+            PlaceRealBuilding(gatherStation, building);
         }
         
         void OnSwitchGameState()
@@ -51,14 +71,34 @@ namespace Creator.Player
         
         void OnPlaceProjectileTower()
         {
-            var canBuild = projectileTower.BuildingRecipe.CanBuild(inventory.Crystals, inventory.Wood);
+            var building = PlaceGhostBuilding(projectileTower);
+            building.TowerPlacer = placer; 
+            PlaceRealBuilding(projectileTower, building);
+        }
+
+        private void PlaceRealBuilding(BuildingData buildingData, Building building)
+        {
+            var canBuild = buildingData.BuildingRecipe.CanBuild(inventory.Crystals, inventory.Wood);
             if (!canBuild) return;
 
-            var successfullyBought = inventory.Buy(projectileTower.BuildingRecipe);
+            var successfullyBought = inventory.Buy(buildingData.BuildingRecipe);
             if (successfullyBought)
             {
-                GameObject.Instantiate(projectileTower.Prefab, placer.GetTowerPlacement(), Quaternion.identity);
+                building.GhostPlacing(GhostBuildingMode.Real);
             }
+        }
+
+        private Building PlaceGhostBuilding(BuildingData buildingData)
+        {
+            GameObject ghostPrefab = Instantiate(buildingData.Prefab, placer.GetTowerPlacement(), Quaternion.identity);
+            var ghostWarehouse = ghostPrefab.GetComponent<WareHouse>();
+            if (ghostWarehouse != null)
+            {
+                ghostWarehouse.GhostPlacing(GhostBuildingMode.Ghost);
+            }
+
+            var building = ghostPrefab.GetComponent<Building>();
+            return building != null ? building : null;
         }
     }
 }
