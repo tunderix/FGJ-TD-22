@@ -1,9 +1,14 @@
 fileFormatVersion: 2
 guid: 9721fe09a3c759248a6e89f4e8d5e968
 ModelImporter:
-  serializedVersion: 20200
+  serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SieniMateriaali
+    second: {fileID: 2100000, guid: 083e0da1f9fa0894ebed75761abd929f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

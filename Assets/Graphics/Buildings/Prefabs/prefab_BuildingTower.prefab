@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 654071313150519083}
   - component: {fileID: 4520595816105322638}
   - component: {fileID: 1826375367963958340}
-  m_Layer: 0
+  m_Layer: 25
   m_Name: prefab_BuildingTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169002394538769809}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 31.3, y: -1.4960182, z: -22.6}
   m_LocalScale: {x: 568.3774, y: 568.3774, z: 568.3774}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &4520595816105322638
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -39,7 +39,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169002394538769809}
-  m_Mesh: {fileID: 5774082964730415127, guid: b9b8496cfdc98444eb7ff42d62cd6879, type: 3}
+  m_Mesh: {fileID: 5774082964730415127, guid: d070969911d3aad44b82f9742d03a56c, type: 3}
 --- !u!23 &1826375367963958340
 MeshRenderer:
   m_ObjectHideFlags: 0
