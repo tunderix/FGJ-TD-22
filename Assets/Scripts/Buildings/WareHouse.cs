@@ -33,6 +33,21 @@ namespace Creator.Buildings
             }
         }
 
-        private int AmountOfResource(int buildingCount) => buildingCount * amountToCollect; 
+        public void SetInventory(Inventory _inventory)
+        {
+            inventory = _inventory;
+        }
+
+        private int AmountOfResource(int buildingCount) => buildingCount * amountToCollect;
+
+        public override void isCreated()
+        {
+            var go = GameObject.FindWithTag("Inventory");
+            var _inventory = go.GetComponent<Inventory>();
+            if (_inventory != null)
+            {
+                inventory = _inventory;
+            }
+        }
     }
 }

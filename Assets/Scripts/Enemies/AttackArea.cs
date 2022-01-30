@@ -11,7 +11,7 @@ namespace Creator.Enemies
         private void OnTriggerEnter(Collider other)
         {
             var attackTarget = other.GetComponent<EnemyAttackTarget>();
-            if (attackTarget != null)
+            if (attackTarget != null && enemy != null) 
             {
                 attackTarget.TakeDamage();
                 enemy.AttackTrigger();

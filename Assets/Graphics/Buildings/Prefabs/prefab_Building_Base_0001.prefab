@@ -142,6 +142,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 282cc83abad689c4f9c4f6742b9c99f1, type: 2}
+  PlacingBuildingGhost: 0
+  renderer: {fileID: 3317945455494292707}
+  ghostMaterial: {fileID: 2100000, guid: faba3aec99db4c04d9af3eaaed0ef96e, type: 2}
+  realMaterial: {fileID: 2100000, guid: a1d83735be7564b4db9f6e79e90137a0, type: 2}
   safeZone: {fileID: 2222236573313188984}
   inventory: {fileID: 0}
   amountToCollect: 4

@@ -76,6 +76,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "DeactivateSelection",
+                    "type": "Button",
+                    "id": "acf20ca9-5219-42fe-86b2-bfeb0a767ab1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -307,6 +315,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "SwitchGameState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f86287c8-4770-49cf-ba5f-d7db68f549d2",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DeactivateSelection",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

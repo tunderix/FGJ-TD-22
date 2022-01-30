@@ -6,8 +6,6 @@ R
 P
  ProjectSettings/VFXManager.asset,1\2\12b95f7502e5928a81c05f6e51a72ac9f53d8087
 R
-"ProjectSettings/ProjectVersion.txt,b\0\b0589bd2976ea622442f59ada87a8d9f9e407a9e
-R
 "ProjectSettings/NavMeshAreas.asset,e\1\e1e73dbaf0c5aeb2708d980653afae43680f5a2f
 W
 'ProjectSettings/Physics2DSettings.asset,e\d\ed18f20dbc51e47c3057c29420904eeadf3949ae
@@ -66,8 +64,6 @@ U
 %Assets/Scripts/Spawning/ISpawnable.cs,8\2\82c00f739ea294a28a6cdb2f742772b5322916be
 O
 Assets/Scripts/UI/UIResource.cs,3\9\39b48d49e6366c127d4d5661545d195025df41c4
-X
-(Assets/Scripts/Buildings/BuildingData.cs,3\b\3bc32f94efab5ec0ff3b6ba7d17d7387d27a86f5
 l
 <Assets/Scripts/ResourceManagement/ResourceTypeRequirement.cs,d\6\d639df0b28b654e2d74df3a4a3d743d25a2e52e9
 Y
@@ -78,17 +74,13 @@ P
  Assets/Scripts/Enemies/Bullet.cs,8\c\8cfb8c99daaf6ac8a1bcc8bb5828795e18024753
 W
 'Assets/Scripts/Enemies/EnemyObserver.cs,9\1\916f3ffd5a3a863069644a1a9c8bf01b6d1e06eb
-T
-$Assets/Scripts/Buildings/Building.cs,2\9\29b675f6845f496b84b8eafbcbc49b4e8c505348
-T
-$Assets/Scripts/Player/TowerPlacer.cs,7\7\77f1f95ce5100d7a6eef8534b74a72d07bf6b07e
-]
--Assets/Scripts/ResourceManagement/Resource.cs,f\0\f03b43211ae65df8056252cfdf80dff538007c2b
-a
-1Assets/Scripts/ResourceManagement/ResourceType.cs,0\d\0dba065ef0bc65cb2e8d4a6b57fbbe87fba576f3
-X
-(Assets/Scripts/Spawning/SpawnableData.cs,e\0\e0d9d7c0c98f65f1493227efc2a8a8a3e4c66851
-a
-1Assets/Scripts/ResourceManagement/ResourceNode.cs,5\c\5c0733bc55ffa9986194472730d221f55fac58c6
-P
- ProjectSettings/TagManager.asset,b\b\bb5c31022a6bdb0c8de055d7b2657e774af959a3
+^
+.Assets/Scripts/ResourceManagement/Inventory.cs,a\a\aaa3400b16a5629928ec3838c3eb03718eab5094
+M
+Assets/Scripts/Enemies/Gun.cs,c\7\c7989b1b39ea412e9c3c166351a0795193853fab
+[
++Assets/Scripts/ResourceManagement/Recipe.cs,9\f\9f6b5fbaae214054f3e80f856d8975e758841e3c
+O
+Assets/Scripts/Enemies/Enemy.cs,b\7\b7353f45ab629382b7da29c981fd24596005cd95
+U
+%Assets/Scripts/GameLogic/SkyCastle.cs,c\7\c74e73f9f728404ad07a236faf422b13d0d6f404
