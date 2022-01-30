@@ -7,10 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mtl_Enemy_Shadow_Eye
+  m_Name: mtl_Player_CrystalEye
   m_Shader: {fileID: 4800000, guid: f56c795d3285abc4f9ce66673e8d7a38, type: 3}
-  m_ShaderKeywords: _EMISSION
-  m_LightmapFlags: 6
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -84,9 +84,9 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _Color: {r: 0.7883768, g: 0.7883768, b: 0.7883768, a: 1}
-    - _Color0: {r: 1, g: 1, b: 1, a: 0}
-    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Light: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0}
-    - _Shadow: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 0}
+    - _Color: {r: 1, g: 0, b: 0.8823524, a: 1}
+    - _Color0: {r: 0.6179246, g: 1, b: 0.97932166, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Light: {r: 1, g: 1, b: 1, a: 0}
+    - _Shadow: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

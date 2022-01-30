@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 654071313150519083}
   - component: {fileID: 4520595816105322638}
   - component: {fileID: 1826375367963958340}
+  - component: {fileID: 2166973114586215587}
   m_Layer: 25
   m_Name: prefab_BuildingTower
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2166973114586215587
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169002394538769809}
+  m_Material: {fileID: 13400000, guid: dd1de9c7340d2004f985b36153a331c6, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5774082964730415127, guid: d070969911d3aad44b82f9742d03a56c, type: 3}

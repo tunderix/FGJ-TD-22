@@ -446,6 +446,7 @@ MonoBehaviour:
   gatherStation: {fileID: 11400000, guid: c6492de2f463e534495477a4b0acaa98, type: 2}
   inventory: {fileID: 0}
   skyCastle: {fileID: 0}
+  isGhostingBuilding: {fileID: 0}
 --- !u!114 &3099360506271485469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -852,8 +853,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -5297687394803125934, guid: 72627956077fc7a42a8d389f5ad5a9b9, type: 3}
-  - {fileID: -5511697478880300416, guid: 72627956077fc7a42a8d389f5ad5a9b9, type: 3}
+  - {fileID: 2100000, guid: fcb64f636a8771d4e80e4e5491d68e17, type: 2}
+  - {fileID: 2100000, guid: 81d24df238c08bc4ba6cfee588cd6748, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
